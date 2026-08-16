@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | West Cobb Crush 2032</title>
+<meta name="description" content="Get in touch with West Cobb Crush 2032 — general team contact, sponsor inquiries, and social links. Placeholder contact info pending team confirmation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+
+<div id="site-header-mount"></div>
+
+<main id="main">
+
+  <section class="page-banner page-banner-noimage" id="top">
+    <div class="container">
+      <span class="crumb"><a href="index.html">Home</a> / Contact</span>
+      <h1>Get in<br><span class="accent">Touch</span></h1>
+      <p>General team contact, sponsor inquiries, and social channels. Contact details below are placeholders pending confirmation with team leadership.</p>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background:var(--white);">
+    <div class="container">
+      <div class="contact-grid">
+        <div data-reveal>
+          <div class="contact-card">
+            <h3>General Inquiries</h3>
+            <a class="value" id="contactEmail" href="#"></a>
+            <p class="note" id="contactEmailNote"></p>
+          </div>
+          <div class="contact-card">
+            <h3>Sponsor Inquiries</h3>
+            <a class="value" href="become-a-sponsor.html">Fill out the sponsor inquiry form &rarr;</a>
+            <p class="note">Or explore sponsor levels first on the <a href="sponsors.html">Sponsors page</a>.</p>
+          </div>
+          <div class="contact-card">
+            <h3>General Area</h3>
+            <span class="value" id="contactLocation"></span>
+            <p class="note" id="contactLocationNote"></p>
+          </div>
+        </div>
+
+        <div data-reveal>
+          <div class="contact-card">
+            <h3>Follow the Crush</h3>
+            <p class="value" style="font-size:.95rem;" id="contactInstagram"></p>
+            <p class="value" style="font-size:.95rem; margin-top:6px;" id="contactFacebook"></p>
+            <p class="note" id="contactSocialNote"></p>
+          </div>
+          <div class="contact-card">
+            <h3>Privacy Note</h3>
+            <p class="note" style="font-size:.82rem;">Because most of this roster is made up of minors, this site intentionally does not publish home addresses, personal phone numbers, or other identifying details about players or families. If you have a privacy question or concern, please reach out using the general contact above.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad-sm" style="background:var(--navy-950);">
+    <div class="container" style="text-align:center;">
+      <div data-reveal>
+        <span class="kicker on-dark">Interested in Partnering?</span>
+        <h2 class="on-dark" style="font-size:clamp(1.6rem,4vw,2.2rem); text-transform:uppercase; margin-top:8px;">Let's start the conversation.</h2>
+        <div class="hero-ctas" style="justify-content:center; margin-top:22px;">
+          <a href="become-a-sponsor.html" class="btn btn-gold btn-emphasis">Become a Sponsor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="data.js"></script>
+<script src="components.js"></script>
+<script src="render.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const email = document.getElementById("contactEmail");
+    email.href = "mailto:" + CONTACT_INFO.email;
+    email.textContent = CONTACT_INFO.email;
+    document.getElementById("contactEmailNote").textContent = CONTACT_INFO.emailNote;
+    document.getElementById("contactLocation").textContent = CONTACT_INFO.location;
+    document.getElementById("contactLocationNote").textContent = CONTACT_INFO.locationNote;
+    document.getElementById("contactInstagram").textContent = "Instagram: " + CONTACT_INFO.instagramHandle;
+    document.getElementById("contactFacebook").textContent = "Facebook: " + CONTACT_INFO.facebookHandle;
+    document.getElementById("contactSocialNote").textContent = CONTACT_INFO.socialNote;
+    Site.initReveal();
+  });
+</script>
+</body>
+</html>

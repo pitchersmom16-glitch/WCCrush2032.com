@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media | West Cobb Crush 2032</title>
+<meta name="description" content="Championships, team culture, friendships, and Road to 2032 moments — the West Cobb Crush 2032 media hub.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="media">
+
+<div id="site-header-mount"></div>
+
+<main id="main">
+
+  <section class="page-banner" id="top">
+    <div class="page-banner-media" style="background-image:url('assets/photos/social-4.jpg');"></div>
+    <div class="page-banner-scrim"></div>
+    <div class="container">
+      <span class="crumb"><a href="index.html">Home</a> / Media</span>
+      <h1>The Media<br><span class="accent">Hub</span></h1>
+      <p>Championships, team culture, friendships, and the day-to-day moments that don't always make the highlight reel — organized so it's easy to find, not an uncontrolled photo dump.</p>
+    </div>
+  </section>
+
+  <section class="social section-pad" id="social">
+    <div class="container">
+      <div class="media-filters" id="mediaFiltersFull" data-reveal></div>
+      <div class="social-grid" id="socialGridFull" data-reveal></div>
+      <p class="social-handle">Follow along <strong>@westcobbcrush2032</strong> — placeholder handle, to be confirmed with team leadership.</p>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="data.js"></script>
+<script src="components.js"></script>
+<script src="render.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    Site.renderMediaFilters("mediaFiltersFull", "socialGridFull");
+    Site.renderSocial("socialGridFull");
+    Site.initReveal();
+  });
+</script>
+</body>
+</html>

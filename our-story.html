@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story — Road to 2032 | West Cobb Crush 2032</title>
+<meta name="description" content="They didn't just join the same team — they grew up together. The full Road to 2032 timeline: from Extreme 8U to championships, Metro softball, and the Class of 2032.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="our-story">
+
+<div id="site-header-mount"></div>
+
+<main id="main">
+
+  <section class="page-banner" id="top">
+    <div class="page-banner-media" style="background-image:url('assets/photos/timeline-2.jpg');"></div>
+    <div class="page-banner-scrim"></div>
+    <div class="container">
+      <span class="crumb"><a href="index.html">Home</a> / Our Story</span>
+      <h1>Our Story —<br><span class="accent">Road to 2032</span></h1>
+      <p>Most of this roster met years before a single travel bag was packed. This is the story of how they got here — and where they're headed next.</p>
+    </div>
+  </section>
+
+  <!-- THEY GREW UP TOGETHER -->
+  <section class="grew-up section-pad" id="grew-up">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="kicker" id="growthKicker"></span>
+        <h2 id="growthHeading"></h2>
+        <p class="desc" id="growthCopy"></p>
+      </div>
+
+      <div class="then-now" data-reveal>
+        <div class="then-now-panel then" id="thenPanel"></div>
+        <div class="then-now-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </div>
+        <div class="then-now-panel now" id="nowPanel"></div>
+      </div>
+
+      <div class="growth-mosaic" id="growthMosaic" data-reveal></div>
+    </div>
+  </section>
+
+  <!-- FULL TIMELINE -->
+  <section class="road section-pad" id="road">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="kicker">Road to 2032</span>
+        <h2>Every season is a step<br>toward the Class of 2032.</h2>
+        <p class="desc">This timeline is built to keep growing — new seasons, new milestones, and eventually the high school and recruiting chapter of this same group's story. Nothing below is a finished chapter; dates and results are shown only where they're documented, and open slots are labeled honestly rather than invented.</p>
+      </div>
+
+      <div class="full-timeline" id="fullTimeline"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="fuel section-pad-sm" style="padding:56px 0;">
+    <div class="fuel-media" role="img" aria-label="West Cobb Crush players together on the field"></div>
+    <div class="fuel-scrim"></div>
+    <div class="container" style="text-align:center;">
+      <div data-reveal style="max-width:640px; margin:0 auto;">
+        <span class="kicker on-dark">Be Part of It</span>
+        <h2 style="font-size:clamp(1.8rem,4.4vw,2.6rem); text-transform:uppercase; margin-top:10px;">Help write the next chapter.</h2>
+        <p class="lede" style="margin-top:14px;">Every season added to this timeline is made possible in part by the people who support this team.</p>
+        <div class="hero-ctas" style="justify-content:center; margin-top:26px;">
+          <a href="team.html" class="btn btn-outline">Meet the Crush</a>
+          <a href="become-a-sponsor.html" class="btn btn-gold btn-emphasis">Become a Sponsor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="data.js"></script>
+<script src="components.js"></script>
+<script src="render.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    Site.renderGrowthStory();
+    Site.renderTimelineFull("fullTimeline");
+    Site.initReveal();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coaches | West Cobb Crush 2032</title>
+<meta name="description" content="Meet the coaching staff of West Cobb Crush 2032 — Head Coach Brandon Woodman, Assistant Coach Sara Poteat French, and the support staff behind the team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="coaches">
+
+<div id="site-header-mount"></div>
+
+<main id="main">
+
+  <section class="page-banner" id="top">
+    <div class="page-banner-media" style="background-image:url('assets/coaches/woodman_duo.jpg'); background-position:top center;"></div>
+    <div class="page-banner-scrim"></div>
+    <div class="container">
+      <span class="crumb"><a href="index.html">Home</a> / Coaches</span>
+      <h1>The Staff Behind<br><span class="accent">the Roster</span></h1>
+      <p>The people who show up early, stay late, and make the journey to 2032 possible.</p>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background:var(--paper);">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="kicker">Coaching Staff</span>
+        <h2>Leading the Crush.</h2>
+        <p class="desc">Photos below are real, candid team photos standing in for official headshots until the team supplies print-ready ones. Bios are built from whatever is confirmed — nothing here is invented, and anything still pending is labeled honestly.</p>
+      </div>
+
+      <div id="coachesLead"></div>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="kicker">Support Staff</span>
+        <h2>The team behind the team.</h2>
+        <p class="desc">Administration and practice support that keep everything running.</p>
+      </div>
+      <div class="staff-grid" id="coachesStaff" data-reveal></div>
+    </div>
+  </section>
+
+  <section class="fuel section-pad-sm" style="padding:56px 0;">
+    <div class="fuel-media" role="img" aria-label="West Cobb Crush team huddle"></div>
+    <div class="fuel-scrim"></div>
+    <div class="container" style="text-align:center;">
+      <div data-reveal style="max-width:640px; margin:0 auto;">
+        <span class="kicker on-dark">Meet the Team</span>
+        <h2 style="font-size:clamp(1.8rem,4.4vw,2.6rem); text-transform:uppercase; margin-top:10px;">See who they coach.</h2>
+        <div class="hero-ctas" style="justify-content:center; margin-top:26px;">
+          <a href="team.html" class="btn btn-outline">Meet the Crush</a>
+          <a href="our-story.html" class="btn btn-gold btn-emphasis">The Full Journey</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="data.js"></script>
+<script src="components.js"></script>
+<script src="render.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    Site.renderCoaches("coachesLead", "coachesStaff");
+    Site.initReveal();
+  });
+</script>
+</body>
+</html>

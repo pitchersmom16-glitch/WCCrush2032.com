@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet the Crush — Team Roster | West Cobb Crush 2032</title>
+<meta name="description" content="Meet the athletes of West Cobb Crush 2032 — jersey numbers, positions, and the personalities behind the roster. Every profile is built with parent approval in mind.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="team">
+
+<div id="site-header-mount"></div>
+
+<main id="main">
+
+  <section class="page-banner" id="top">
+    <div class="page-banner-media" style="background-image:url('assets/photos/timeline-5.jpg');"></div>
+    <div class="page-banner-scrim"></div>
+    <div class="container">
+      <span class="crumb"><a href="index.html">Home</a> / Team</span>
+      <h1>Meet the<br><span class="accent">Crush</span></h1>
+      <p>The athletes behind the name — built field-by-field so every family decides exactly what's public.</p>
+    </div>
+  </section>
+
+  <section class="roster section-pad" id="roster">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="kicker">The Full Roster</span>
+        <h2>Every player on this page has a real story.</h2>
+        <p class="desc">Names, numbers, and details are concept content pulled from materials already shared with families — every field is <strong>pending individual parent approval</strong> before this page goes live. Because these athletes are minors, any field can be hidden per family's request.</p>
+      </div>
+
+      <div class="roster-grid" id="teamGrid" data-reveal></div>
+
+      <p class="roster-footnote">
+        Photos shown are real Crush players styled in a placeholder photo treatment while the team collects approved, print-ready photography. Tap the <strong>+</strong> on any card for a bit more about that player.
+      </p>
+    </div>
+  </section>
+
+  <section class="fuel section-pad-sm" style="padding:56px 0;">
+    <div class="fuel-media" role="img" aria-label="West Cobb Crush team huddle"></div>
+    <div class="fuel-scrim"></div>
+    <div class="container" style="text-align:center;">
+      <div data-reveal style="max-width:640px; margin:0 auto;">
+        <span class="kicker on-dark">Coaches</span>
+        <h2 style="font-size:clamp(1.8rem,4.4vw,2.6rem); text-transform:uppercase; margin-top:10px;">Meet the staff behind the roster.</h2>
+        <p class="lede" style="margin-top:14px;">Coach profiles are coming to this site once approved by team leadership.</p>
+        <div class="hero-ctas" style="justify-content:center; margin-top:26px;">
+          <a href="coaches.html" class="btn btn-outline">Coaches Page</a>
+          <a href="our-story.html" class="btn btn-gold btn-emphasis">See the Full Journey</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer-mount"></div>
+
+<script src="data.js"></script>
+<script src="components.js"></script>
+<script src="render.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    Site.renderRoster("teamGrid", PLAYERS);
+    Site.initReveal();
+  });
+</script>
+</body>
+</html>
