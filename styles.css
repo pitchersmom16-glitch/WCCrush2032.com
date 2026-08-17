@@ -247,7 +247,7 @@ p{ margin:0; }
   position:absolute; inset:0;
   background-image:url('assets/photos/hero.jpg');
   background-size:cover;
-  background-position:center 18%;
+  background-position:center 32%;
   transform:scale(1.04);
 }
 .hero-scrim{

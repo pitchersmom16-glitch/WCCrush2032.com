@@ -9,7 +9,26 @@ Cobb Girls Softball page. Every page carries a small "PROTOTYPE / CONCEPT
 SITE" disclosure ribbon at the top, and the footer repeats that on every
 page.
 
-## Most recent update (Aug 2026)
+## Most recent update (Aug 2026) — photo overhaul
+
+- **Hero photo fixed** — the old hero was a portrait-orientation team photo
+  forced into a wide cinematic banner; `background-size:cover` on that shape
+  cropped out ~60% of the image, leaving only sky and a couple of faces
+  visible. Replaced with a landscape team photo (the golden-hour lineup shot)
+  that actually fits a wide hero — the full team is now visible on both
+  desktop and mobile.
+- **All 10 player card photos rebuilt** — the birthday-graphic source photos
+  (pink checkerboard backgrounds, doodles, handwritten text) were run through
+  a background-removal pass and recomposited as clean cutouts on solid navy,
+  in real color, instead of the old flat gray duotone that left the
+  checkerboard and doodle text visible through the treatment. Same real
+  photos, same names/numbers/positions — just a premium presentation instead
+  of a processed birthday card.
+- To keep building this out: swap in real print-ready team photography as it
+  becomes available (the data-driven card system means dropping in a new file
+  and updating one line in `data.js` is all it takes — no per-page changes).
+
+## Most recent update (Aug 2026) — roster & timeline
 
 - **Roster corrected** — `PLAYERS` in `data.js` now matches the mom-provided
   roster and positions exactly (Grey #1, Chelsie #2, Dylan #5, Mackenzie #6,
