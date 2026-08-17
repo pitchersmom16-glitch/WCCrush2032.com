@@ -1,0 +1,35 @@
+/* Responsive overrides and image helpers for initial pass
+   Added as a small, isolated file so changes are reviewable on a branch.
+*/
+
+@media (max-width: 599px) {
+  /* Reduce hero height on smaller screens so primary content is visible without extreme scrolling */
+  .hero { min-height: 60vh; }
+  .hero-content { padding: 80px 16px 40px; }
+  .hero-media { background-position: center 20% !important; transform: scale(1.02); }
+  .hero-ctas { margin-top: 20px; }
+  .hero .lede { max-width: 100%; }
+
+  /* Slightly smaller headings for constrained widths */
+  .section-head h2 { font-size: 1.6rem; }
+}
+
+/* Image helpers to reduce layout shift and ensure consistent cover/cropping
+   These work together with render.js adding width/height and the "responsive-img" class. */
+.responsive-img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Context-specific aspect hints (approximate) to further reduce CLS when size attrs are unavailable */
+.player-card img{ aspect-ratio: 4/5; }
+.spotlight-media img{ aspect-ratio: 16/9; }
+.story-card .st-media img{ aspect-ratio: 16/9; }
+.timeline-card .tl-media img{ aspect-ratio: 16/9; }
+.social-tile img{ aspect-ratio: 1/1; }
+
+/* Small accessibility/focus polish */
+.pc-more-toggle:focus, .nav-toggle:focus, .mobile-menu-close:focus{ outline: 3px solid rgba(201,162,75,0.28); outline-offset:2px; }
